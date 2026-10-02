@@ -1,305 +1,432 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en">
+<!doctype html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Joo's Portfolio</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joo — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
-
   <body>
-    <div id="mobile-menu-open" class="shadow-large">
-      <i class="fa fa-bars" aria-hidden="true"></i>
-    </div>
-    <!-- End #mobile-menu-toggle -->
-    <header>
-      <div id="mobile-menu-close">
-        <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
-      </div>
-      <ul id="menu" class="shadow">
-        <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a href=".experience">Experience</a>
-        </li>
-        <li>
-          <a href=".education">Education</a>
-        </li>
-        <li>
-          <a href="#projects">Projects</a>
-        </li>
-        <li>
-          <a href="#skills">Skills</a>
-        </li>
-      </ul>
-    </header>
-    <!-- End header -->
+    <main>
+      <section class="hero" id="home" aria-label="Hero section">
+        <!-- 배경 이미지 -->
+        <div
+          class="hero-bg"
+          role="img"
+          aria-label="Portfolio hero background"
+        ></div>
 
-    <div id="lead">
-      <div id="lead-content">
-        <h1>Joo Hyosung</h1>
+        <!-- 배경 위에 표시할 문구 -->
+        <div class="hero-content">
+          <h2>
+            문제를 이해하고,<br />
+            기술로 해결하는 <br />
+            주효성입니다.
+          </h2>
 
-      </div>
-      <!-- End #lead-content -->
+          <p class="hero-desc">
+            컨설팅에서 쌓은 문제 정의 경험과 데이터·AI·개발 역량을 연결해<br />
+            더 나은 해결책을 만들어갑니다.
+          </p>
+        </div>
+      </section>
 
-      <div id="lead-overlay"></div>
+      <section class="intro section-light">
+        <div class="container intro-grid">
+          <div class="intro-side">
+            <h2>Education &amp; Experience</h2>
 
-      <div id="lead-down">
-        <span>
-          <i class="fa fa-chevron-down" aria-hidden="true"></i>
-        </span>
-      </div>
-      <!-- End #lead-down -->
-    </div>
-    <!-- End #lead -->
+            <div class="intro-history-grid">
+              <section class="intro-history">
+                <h3>Education</h3>
+                <ul>
+                  <li>
+                    <strong>국민대학교 경영대학원</strong>
+                    <span>AI빅데이터전공<br />2026.03 – 재학 중</span>
+                  </li>
+                  <li>
+                    <strong>고려대학교 세종캠퍼스</strong>
+                    <span>공공행정학부<br />2014.03 – 2023.08</span>
+                  </li>
+                </ul>
+              </section>
 
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h2 class="heading">About Me</h2>
+              <section class="intro-history">
+                <h3>Career</h3>
+                <ul>
+                  <li>
+                    <strong>나눔아이씨티</strong>
+                    <span>IT컨설턴트<br />2025.05–2026.03</span>
+                  </li>
+                  <li>
+                    <strong>오투플러스</strong>
+                    <span>서비스 기획자<br />2024.08–2025.05</span>
+                  </li>
+                  <li>
+                    <strong>세종경영자문</strong>
+                    <span>IT컨설턴트<br />2023.04–2024.08</span>
+                  </li>
+                </ul>
+              </section>
+            </div>
           </div>
-          <div class="col-md-8">
-            <p>
-              <h4>
-                  팀원들과 원활한 관계를 유지하는 책임감 강한 주효성입니다.
-              </h4>
-              여러 프로젝트에서 팀원들과의 원활한 의사소통
-              과정 속 성공적인 프로젝트를 도출한 경험을 가지고 있습니다.
-              현재 직무에서 데이터 거버넌스 등 디지털 전략 컨설팅 업무를 진행하고 있습니다.
-              저는 ‘자기 계발을 통해 끊임없는 발전을 계속하고, 이러한 가치를 발휘하기 위해 노력하는가.’를 중요하게 생각합니다. 
-              자기 계발이란, 혼자만의 발전이 아닌 스스로와 속한 조직과 함께 발전하는 원동력이라고 생각합니다. 
-              저는 나 혼자만의 발전이 아닌 내가 속한 조직과의 발전을 위한 자기 계발을 가장 큰 가치로 삼고, 이를 통해 느끼는 성취감을 원동력으로 발전해왔습니다. 
-              이러한 저의 강점을 잘 살릴 수 있는 직무 속에서 성취감을 가지고 일하고 싶습니다.<br>
-              <a href='https://github.com/joohyosung'>My Github Address</a> <br>
-              <a href='https://www.notion.so/Joo-s-Record-54dd5fecf2b845389e4190dd1d82f1dd'>My Notion Address</a>
+          <p class="intro-main">
+            지자체 정보화 전략·기본계획 컨설턴트로서 이해관계자 인터뷰와
+            데이터·문헌조사를 통해 현장의 문제를 정의하고, 요구사항을 분석해
+            실행 가능한 전략과 정보화 과제를 도출한 경험이 있습니다.
+            <br /><br />이러한 문제해결 경험을 바탕으로 AI·빅데이터 전공
+            대학원과 개발·데이터 교육을 통해 Python, Java, SQL, 데이터베이스,
+            데이터 분석 및 AI 관련 역량을 쌓으며 다양한 프로젝트를 수행했습니다.
+            <br /><br />비즈니스 문제를 구조화하고 기술과 데이터로 해결책을
+            구현하는 강점을 바탕으로, AI·데이터·백엔드·데이터베이스 영역을
+            폭넓게 이해하는 IT 엔지니어로 성장하고 있습니다. <br /><br />기획
+            과정에서 발견한 문제를 분석과 구현으로 끝까지 연결해, 현장에서
+            실제로 쓰이는 결과를 만드는 것을 중요하게 생각합니다.
+          </p>
+        </div>
+      </section>
 
-            </p>
-            
+      <section class="skills section-dark" id="skills">
+        <div class="container">
+          <div class="eyebrow-row">
+            <span>@ Code by Ashwin</span>
+            <span>Passionate Creative Designer and Developer</span>
+          </div>
+          <h2 class="skills-title">My Skills</h2>
+
+          <div class="skills-grid">
+            <!-- Programming Languages -->
+            <article class="skill-card">
+              <div class="chip-row">
+                <span class="icon-chip">Python</span>
+                <span class="icon-chip">Java</span>
+                <span class="icon-chip">JS</span>
+                <span class="icon-chip">SQL</span>
+              </div>
+
+              <h3>Programming Languages</h3>
+
+              <p>
+                Python, Java, JavaScript, SQL을 활용하여 데이터 분석부터
+                애플리케이션 개발까지 다양한 문제를 해결합니다.
+              </p>
+            </article>
+
+            <!-- Data Analysis -->
+            <article class="skill-card">
+              <div class="chip-row">
+                <span class="icon-chip">Pandas</span>
+                <span class="icon-chip">NumPy</span>
+                <span class="icon-chip">Matplotlib</span>
+                <span class="icon-chip">Plotly</span>
+              </div>
+
+              <h3>Data Analysis</h3>
+
+              <p>
+                데이터 전처리와 탐색적 데이터 분석을 통해 데이터에서 의미 있는
+                패턴과 인사이트를 발견하고 분석 결과를 시각화합니다.
+              </p>
+            </article>
+
+            <!-- AI / Machine Learning -->
+            <article class="skill-card">
+              <div class="chip-row">
+                <span class="icon-chip">AI</span>
+                <span class="icon-chip">ML</span>
+                <span class="icon-chip">Codex</span>
+                <span class="icon-chip">Hermes</span>
+              </div>
+
+              <h3>AI &amp; Machine Learning</h3>
+
+              <p>
+                머신러닝 모델과 생성형 AI, AIagent를 활용해 데이터 예측, 이미지
+                분석, 영상 분석 등 AI 기반 프로젝트를 구현합니다.
+              </p>
+            </article>
+
+            <!-- Backend -->
+            <article class="skill-card">
+              <div class="chip-row">
+                <span class="icon-chip">Java</span>
+                <span class="icon-chip">JDBC</span>
+                <span class="icon-chip">DAO</span>
+                <span class="icon-chip">MVC</span>
+              </div>
+
+              <h3>Back-End Development</h3>
+
+              <p>
+                Java 기반 애플리케이션에서 객체지향 설계와 DAO 구조를 활용하여
+                비즈니스 로직과 데이터 처리 기능을 구현합니다.
+              </p>
+            </article>
+
+            <!-- Database -->
+            <article class="skill-card">
+              <div class="chip-row">
+                <span class="icon-chip">MySQL</span>
+                <span class="icon-chip">PostgreSQL</span>
+                <span class="icon-chip">RDS</span>
+                <span class="icon-chip">SQL</span>
+              </div>
+
+              <h3>Database Management</h3>
+
+              <p>
+                관계형 데이터베이스 설계와 SQL을 활용하여 데이터를
+                저장·조회·관리하고 애플리케이션과 데이터베이스를 연동합니다.
+              </p>
+            </article>
+
+            <!-- Web -->
+            <article class="skill-card">
+              <div class="chip-row">
+                <span class="icon-chip">HTML</span>
+                <span class="icon-chip">CSS</span>
+                <span class="icon-chip">JS</span>
+                <span class="icon-chip">Streamlit</span>
+              </div>
+
+              <h3>Web Development</h3>
+
+              <p>
+                HTML, CSS, JavaScript를 활용한 웹 페이지와 Streamlit 기반 데이터
+                분석 웹 애플리케이션을 구현합니다.
+              </p>
+            </article>
+
+            <!-- Data Visualization -->
+            <article class="skill-card">
+              <div class="chip-row">
+                <span class="icon-chip">Plotly</span>
+                <span class="icon-chip">Folium</span>
+                <span class="icon-chip">Matplotlib</span>
+                <span class="icon-chip">Streamlit</span>
+              </div>
+
+              <h3>Data Visualization</h3>
+
+              <p>
+                분석 결과를 차트와 지도 기반 시각화로 표현하고, 사용자가
+                데이터를 직관적으로 탐색할 수 있는 인터랙티브 대시보드를
+                구현합니다.
+              </p>
+            </article>
+
+            <!-- Version Control -->
+            <article class="skill-card">
+              <div class="chip-row">
+                <span class="icon-chip">Git</span>
+                <span class="icon-chip">GitHub</span>
+                <span class="icon-chip">Linux</span>
+                <span class="icon-chip">Docker</span>
+                <span class="icon-chip">WSL</span>
+              </div>
+
+              <h3>Version Control</h3>
+
+              <p>
+                Git과 GitHub를 활용하여 프로젝트 버전 관리와 협업을 수행하고
+                Linux, WSL, Docker 환경을 활용하여 개발 환경을 구성해
+                애플리케이션을 실행합니다.
+              </p>
+            </article>
+
+            <!-- Consulting -->
+            <article class="skill-card">
+              <div class="chip-row">
+                <span class="icon-chip">요구 분석</span>
+                <span class="icon-chip">인터뷰</span>
+                <span class="icon-chip">리서치</span>
+                <span class="icon-chip">전략 수립</span>
+              </div>
+
+              <h3>IT Consulting &amp; Business Analysis</h3>
+
+              <p>
+                이해관계자 인터뷰와 데이터·문헌조사를 통해 비즈니스 문제와
+                요구사항을 분석하고 실행 가능한 IT 전략과 과제를 도출합니다.
+              </p>
+            </article>
           </div>
         </div>
-      </div>
-    </div>
-    <!-- End #about -->
-    
-    <div id="education" class="experience" style="background-color: #F2F2F5;">
-      <h2 class="heading">Experience</h2>
-      <div class="education-block" style="background-color: #FFFFFF;">
-        <h3>이엘공간디자인</h3>
-        <span class="education-date">July 2021 - June 2022</span>
-        <h4>인턴</h4>
-        <p style="color:#768089;">현장 보조 역할을 하며 현장에서 팀원들과 유대를 쌓으며 혼자 일하는 것이 아닌 팀으로 일하는 법을 배웠습니다.</p>
-        <br></br>
-        <ul>
-          <li>2021.07 - 입사</li>
-          <li>2022.06 - 퇴사</li>
-        </ul>
-      </div>
-      <!-- End .education-block -->
-      <div class="education-block" style="background-color: #FFFFFF;">
-        <h3>세종경영자문</h3>
-        <span class="education-date">April 2023 - 재직중</span>
-        <h4>컨설턴트</h4>
-        <p style="color:#768089;">데이터 거버넌스 등 디지털 전략 컨설팅을 하며, '오산시 지능정보사회 종합계획 수립', '구리시 지능정보사회 종합계획 수립' 프로젝트를 수행했습니다.</p>
-        <br></br>
-        <ul>
-          <li>2023.04 - 입사</li>
-          <li>2023.10 - 재직중</li>
-        </ul>
-      </div>
-    <!-- End #experience -->
+      </section>
 
-    <div id="education" class="education" style="background-color: #FFFFFF;">
-      <h2 class="heading">Education</h2>
-      <div class="education-block">
-        <h3>고려대학교 세종캠퍼스</h3>
-        <span class="education-date">March 2014 - August 2019</span>
-        <h4>공공행정학부</h4>
-        <ul>
-          <li>2014 - 입학</li>
-          <li>2015 - 공공행정학부 학생회 간부 역임</li>
-          <li>2016 - 휴학</li>
-          <li>2017 - 정부행정학부 학생회장 역임</li>
-          <li>2018 - 정부행정학부 운영위원회 역임</li>
-          <li>2019 - 공공행정학부 수료</li>
-          <li>2023 - 공공행정학부 졸업</li>
-        </ul>
-      </div>
-      <!-- End .education-block -->
-      <div class="education-block">
-        <h3>알파코캠퍼스</h3>
-        <span class="education-date">October 2022 - March 2023</span>
-        <h4>알파코캠퍼스 부트캠프 4기</h4>
-        <ul>
-          <li>2022 10 - Python을 이용한 데이터 분석 및 시각화</li>
-          <li>2022 11 - Python을 이용한 데이터 분석 및 시각화</li>
-          <li>2022 12 - Python을 이용한 데이터 분석 및 시각화</li>
-          <li>2023 01 - Python(Django)을 이용한 웹 구성하기</li>
-          <li>2023 02 - Python(Django)을 이용한 웹 구성하기</li>
-          <li>2023 03 - UI-Path를 이용한 RPA프로그래밍</li>
-        </ul>
-      </div>
-      <!-- End .education-block -->
-      <div class="education-block">
-        <h3>SWcamp PM 3기</h3>
-        <span class="education-date">July 2023 - October 2023</span>
-        <h4>SWcamp PM 3기</h4>
-        <ul>
-          <li>2023 07 - PM 용어 공부 및 배달의 민족 서비스 역기획</li>
-          <li>2023 08 - 스페이스 클라우드 서비스 역기획</li>
-          <li>2023 09 - 웹 서비스 기획</li>
-          <li>2023 10 - 웹 서비스 배포 및 개선</li>
-        </ul>
-      </div>
-      <!-- End .education-block -->
-    </div>
-    <!-- End #education -->
+      <section class="works section-light" id="works">
+        <div class="container">
+          <div class="works-topline">
+            <div>
+              <p class="mini-label">selected projects</p>
+              <h2>Project Works</h2>
+            </div>
+          </div>
 
-    <div id="projects" class="background-alt">
-      <h2 class="heading">Projects</h2>
-      <div class="container">
-        <div class="row">
-          <div class="project shadow-large">
-            <div class="project-image">
-              <img src="images/project1.png" style="width:300px;height:300px;"/>
-            </div>
-            <!-- End .project-image -->
-            <div class="project-info">
-              <h3>철강 공장 제조 데이터 분석</h3>
-              <p>
-                 철강 공장 제조 덤프 데이터를 통한 데이터를 분석 및 시각화를 실시하고 ML을 통하여 솔루션을 도출
-              </p>
-              <a href="project_template/RPA_4기_프로젝트1.pdf" download="Joo_project_1.pdf">View Project</a><br>
-              <a href="https://github.com/joohyosung/python_data_analysis_project/tree/main/RPA_4%EA%B8%B0_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B81_8%EC%A1%B0(First-Project-8-master)">View Code</a>
-            </div>
-            <!-- End .project-info -->
-          </div>
-          <!-- End .project -->
-          <div class="project shadow-large">
-            <div class="project-image">
-              <img src="images/project2+3.png" style="width:300px;height:300px;"/>
-            </div>
-            <!-- End .project-image -->
-            <div class="project-info">
-              <h3>데이터 분석 프로젝트 비지니스 문제해결</h3>
-              <p>
-                 육아용품 쇼핑몰 데이터를 분석하여 시각화를 진행한 후 현 쇼핑몰의 문제점을 찾고 ML을 통하여 솔루션을 도출
-              </p>
-              <a href="project_template/RPA_4기_프로젝트2+3.pdf" download="Joo_project_2+3.pdf">View Project</a><br>
-              <a href="https://github.com/joohyosung/python_data_analysis_project/tree/main/project2%2B3">View Code</a>
-            </div>
-            <!-- End .project-info -->
-          </div>
-          <!-- End .project -->
+          <div class="project-categories">
+            <section class="project-category">
+              <h3 class="project-category-title">
+                <span>01</span> 데이터 분석 · AI
+              </h3>
+              <div class="project-grid">
+            <a
+              class="project-card"
+              href="./project_template/RPA_4기_프로젝트1.pdf"
+              aria-label="철강 공장 제조 데이터 분석"
+            >
+              <img src="assets/project1.png" alt="project1" />
+              <span
+                >철강 공장 제조 덤프 데이터를 통한 데이터를 분석 및 시각화를
+                실시하고 ML을 통하여 솔루션을 도출</span
+              >
+              <h3><span>→</span> 철강 공장 제조 데이터 분석</h3>
+            </a>
+            <a
+              class="project-card"
+              href="./project_template/RPA_4기_프로젝트2+3.pdf"
+              aria-label="비지니스 문제해결 데이터 분석 프로젝트"
+            >
+              <img src="assets/project2+3.png" alt="project2+3" />
+              <span
+                >육아용품 쇼핑몰 데이터를 분석하여 시각화를 진행한 후 현
+                쇼핑몰의 문제점을 찾고 ML을 통하여 솔루션을 도출</span
+              >
+              <h3><span>→</span> 비지니스 문제해결 데이터 분석 프로젝트</h3>
+            </a>
+            <a
+              class="project-card"
+              href="./project_template/RPA_4기_프로젝트4.pdf"
+              aria-label="데이터 기반 문제해결 프로젝트"
+            >
+              <img src="assets/project4.png" alt="project4" />
+              <span
+                >노인 복지 관련 공공데이터를 수집하고 데이터를 분석 및
+                시각화하여 문제점을 도출 ML을 통하여 문제점에 대한 솔루션을
+                도출</span
+              >
+              <h3><span>→</span> 공공데이터 기반 문제해결 프로젝트</h3>
+            </a>
+              </div>
+            </section>
 
-          <div class="project shadow-large">
-            <div class="project-image">
-              <img src="images/project4.png" style="width:300px;height:300px;"/>
-            </div>
-            <!-- End .project-image -->
-            <div class="project-info">
-              <h3>데이터 기반 문제해결 프로젝트</h3>
-              <p>
-                노인 복지 관련 공공데이터를 수집하고 데이터를 분석 및 시각화하여 문제점을 도출
-                ML을 통하여 문제점에 대한 솔루션을 도출
-              </p>
-              <a href="project_template/RPA_4기_프로젝트4.pdf" download="Joo_project_4.pdf">View Project</a><br>
-              <a href="https://github.com/joohyosung/python_data_analysis_project/tree/main/RPA_4%EA%B8%B0_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B84_5%EC%A1%B0">View Code</a>
-            </div>
-            <!-- End .project-info -->
-          </div>
-          <!-- End .project -->
-          <div class="project shadow-large">
-            <div class="project-image">
-              <img src="images/project5.png" style="width:300px;height:300px;"/>
-            </div>
-            <!-- End .project-image -->
-            <div class="project-info">
-              <h3>웹 어플리케이션 구현</h3>
-              <p>
-                Django를 이용한 웹 어플리케이션 구현 rest-framework를 이용하여 JWT 시스템으로
-                로그인 및 유저 관리 시스템을 구축하고 '모여방'이라는 웹 어플리케이션 컨셉트에 맞는 게시판을 구성
-              </p>
-              <a href="project_template/RPA_4기_프로젝트5.pdf" download="Joo_project_5.pdf">View Project</a><br>
-              <a href="https://github.com/Liamns/web_project">View Code</a>
-            </div>
-            <!-- End .project-info -->
-          </div>
-          <!-- End .project -->
-          <div class="project shadow-large">
-            <div class="project-image">
-              <img src="images/투두일리.jpg" style="width:300px;height:300px;"/>
-            </div>
-            <!-- End .project-image -->
-            <div class="project-info">
-              <h3>웹 서비스 기획 및 배포</h3>
-              <p>
-                노코드툴인 Webflow와 Javascript를 활용하여 문제정의부터
-                시작하여 웹 서비스를 기획하고 배포한 후 GA를 활용하여
-                데이터를 기반으로 개선점을 찾아 개선하는 프로젝트를 진행
-              </p>
-              <a href="project_template/투두일리 최종발표_231024_153818.pdf" download="투두일리 최종발표_231024_153818.pdf">View Project</a><br>
-              <a href="https://todoily.webflow.io/">View Site</a>
-            </div>
-            <!-- End .project-info -->
-          </div>
-          <!-- End .project -->
-        </div>
-      </div>
-    </div>
-    <!-- End #projects -->      
+            <section class="project-category">
+              <h3 class="project-category-title">
+                <span>02</span> 웹 기획 · 개발
+              </h3>
+              <div class="project-grid">
+            <a
+              class="project-card"
+              href="./project_template/RPA_4기_프로젝트5.pdf"
+              aria-label="웹 어플리케이션 구현"
+            >
+              <img src="assets/project5.png" alt="project5" />
+              <span
+                >Django를 이용한 웹 어플리케이션 구현 rest-framework를 이용하여
+                JWT 시스템으로 로그인 및 유저 관리 시스템을 구축하고
+                '모여방'이라는 웹 어플리케이션 컨셉트에 맞는 게시판을 구성</span
+              >
+              <h3><span>→</span> 웹 어플리케이션 구현</h3>
+            </a>
+            <a
+              class="project-card"
+              href="./project_template/투두일리 최종발표_231024_153818.pdf"
+              aria-label="웹 서비스 기획 및 배포"
+            >
+              <img src="assets/투두일리.jpg" alt="투두일리" />
+              <span
+                >노코드툴인 Webflow와 Javascript를 활용하여 문제정의부터
+                시작하여 웹 서비스를 기획하고 배포한 후 GA를 활용하여 데이터를
+                기반으로 개선점을 찾아 개선하는 프로젝트를 진행</span
+              >
+              <h3><span>→</span> 웹 서비스 기획 및 배포</h3>
+            </a>
+              </div>
+            </section>
 
-    <div id="skills" style="background-color: #FFFFFF;">
-      <h2 class="heading">Skills</h2>
-      <ul>
-        <li>Python</li>
-        <li>Django</li>
-        <li>JavaScript</li>
-        <li>CSS</li>
-        <li>HTML</li>
-        <li>MYSQL</li>
-      </ul>
-    </div>
-    <!-- End #skills -->
-
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-5 copyright">
-            <p>
-              Copyright &copy; <span id="current-year">2023</span> Joo Hyosung
-            </p>
+            <section class="project-category">
+              <h3 class="project-category-title">
+                <span>03</span> 인터랙티브 웹 프로젝트
+              </h3>
+              <div class="project-grid">
+            <a
+              class="project-card"
+              href="./movie_site/index.html"
+              aria-label="KOSTA 힐링 시네마 page"
+            >
+              <img src="assets/movie_site.png" alt="movie_site" />
+              <span
+                >영화 미리보기와 찜 목록 관리 기능을 제공하는 영화 큐레이션
+                페이지를 HTML, CSS, JavaScript를 활용하여 작성</span
+              >
+              <h3><span>→</span> KOSTA 힐링 시네마 page 구성</h3>
+            </a>
+            <a
+              class="project-card"
+              href="./fruits_shop/index.html"
+              aria-label="싱싱마켓 | 과일·채소 쇼핑몰 page"
+            >
+              <img src="assets/fruits_shop.png" alt="fruits_shop" />
+              <span
+                >상품을 검색하고 상세 정보를 확인하며, 과일과 채소를 둘러볼 수
+                있는 온라인 쇼핑몰 페이지를 HTML, CSS, JavaScript를 활용하여
+                작성</span
+              >
+              <h3><span>→</span> 싱싱마켓 | 과일·채소 쇼핑몰 page 구성</h3>
+            </a>
+            <a
+              class="project-card"
+              href="./todo_list/index.html"
+              aria-label="오늘의 플랜 page"
+            >
+              <img src="assets/todoList.png" alt="todoList" />
+              <span
+                >할 일을 등록하고 완료 여부를 체크하거나 검색·삭제하며 하루
+                일정을 관리하는 웹앱을 HTML, CSS, JavaScript를 활용하여
+                작성</span
+              >
+              <h3><span>→</span> 오늘의 플랜 page</h3>
+            </a>
+            <a
+              class="project-card"
+              href="./WS03/index.html"
+              aria-label="KOSTA은행 site"
+            >
+              <img src="assets/kostabank.png" alt="kostabank" />
+              <span
+                >개인·기업 메뉴와 로그인·회원가입 화면, 자동으로 바뀌는 배너를
+                구성한 KOSTAd은행 포털 사이트를 HTML, CSS, JavaScript를 활용하여
+                작성
+              </span>
+              <h3><span>→</span> KOSTA은행 site</h3>
+            </a>
           </div>
-          <div class="col-sm-2 top">
-            <span id="to-top">
-              <i class="fa fa-chevron-up" aria-hidden="true"></i>
-            </span>
-          </div>
-          <div class="col-sm-5 social">
-            <ul>
-              <li>
-                <a href="https://github.com/joohyosung" target="_blank"
-                  ><i class="fa fa-github" aria-hidden="true"></i
-                ></a>
-              </li>
-            </ul>
+          <div class="center">
+            <a class="pill" href="#works">• Explore more</a>
           </div>
         </div>
-      </div>
-    </footer>
-    <!-- End footer -->
+      </section>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
+      <footer class="footer">
+        <div class="footer-arrow">↗</div>
+              </div>
+            </section>
+        <p>Thank you for comming</p>
+      </footer>
+    </main>
+
+    <nav class="floating-nav" aria-label="Page navigation">
+      <a href="#home" title="Home">⌂</a>
+      <a href="#works" title="Works">▣</a>
+      <a href="#skills" title="Skills">◎</a>
+      <a class="avatar" href="#home" title="Profile">A</a>
+    </nav>
+
+    <script src="script.js"></script>
   </body>
 </html>
