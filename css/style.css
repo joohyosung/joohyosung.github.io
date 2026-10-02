@@ -40,6 +40,7 @@ img {
 }
 
 .hero {
+  position: relative;
   height: min(51vw, 560px);
   min-height: 390px;
   overflow: hidden;
@@ -325,6 +326,7 @@ img {
   line-height: 1.6;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
 }
 .project-card h3 {
   font-size: 20px;
