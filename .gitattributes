@@ -1,0 +1,4 @@
+# Generated documents and media are binary, even when their PDF headers are ASCII.
+*.pdf binary
+*.ttf binary
+*.webp binary

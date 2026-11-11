@@ -1,0 +1,5 @@
+reportlab
+pypdfium2
+pypdf
+Pillow
+fonttools

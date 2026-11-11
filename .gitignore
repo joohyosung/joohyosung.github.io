@@ -1,0 +1,4 @@
+# Local portfolio screenshots, font build cache and PDF render verification.
+/work/portfolio/
+__pycache__/
+*.py[cod]

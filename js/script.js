@@ -1,32 +1,15 @@
-const links = document.querySelectorAll(".floating-nav a");
-
-links.forEach((link) => {
-  link.addEventListener("click", () => {
-    links.forEach((item) => item.classList.remove("active"));
-    link.classList.add("active");
-  });
-});
-
-const expectedLabel = document.querySelector("#expected");
-const cutoffDate = new Date(2027, 1, 1); // 월은 0부터 시작하므로 1은 2월
-
-function updateExpectedLabel() {
-  if (!expectedLabel) return;
-
-  const now = new Date();
-
-  if (now >= cutoffDate) {
-    expectedLabel.remove();
-    return;
-  }
-
-  const nextMidnight = new Date(
-    now.getFullYear(),
-    now.getMonth(),
-    now.getDate() + 1,
-  );
-
-  setTimeout(updateExpectedLabel, nextMidnight.getTime() - now.getTime());
+// Keep section navigation in sync with the section currently being read.
+const navigationLinks = [...document.querySelectorAll('nav a[href^="#"]')];
+const navigationSections = navigationLinks.map(link => document.querySelector(link.hash)).filter(Boolean);
+if ('IntersectionObserver' in window) {
+  const visibleSections = new Map();
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => visibleSections.set(entry.target.id, entry.isIntersecting));
+    const current = navigationSections.find(section => visibleSections.get(section.id));
+    navigationLinks.forEach(link => {
+      if (current && link.hash === `#${current.id}`) link.setAttribute('aria-current', 'location');
+      else link.removeAttribute('aria-current');
+    });
+  }, { rootMargin: '-90px 0px -45% 0px', threshold: 0 });
+  navigationSections.forEach(section => observer.observe(section));
 }
-
-updateExpectedLabel();
