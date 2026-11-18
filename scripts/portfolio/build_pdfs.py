@@ -1,4 +1,4 @@
-"""Rebuild the six portfolio PDFs from preserved sources.
+"""Rebuild the portfolio PDFs from preserved sources.
 
 Dependencies: reportlab, pypdfium2, pillow.
 Usage: python scripts/portfolio/build_pdfs.py
@@ -231,7 +231,8 @@ todo.add('08 / RETROSPECTIVE','다시 시도하는 힘과 측정의 중요성','
 if __name__=='__main__':
     import sys
     from build_safety_map_pdf import make_safety_deck
-    decks=[customer,backend,steel,silver,todo,make_safety_deck()]
+    from build_kbeauty_pdf import make_kbeauty_deck
+    decks=[customer,backend,steel,silver,todo,make_safety_deck(),make_kbeauty_deck()]
     requested=set(sys.argv[1:])
     if requested:
         assert requested <= {deck.filename for deck in decks}, 'Unknown PDF filename'

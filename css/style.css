@@ -1,13 +1,13 @@
 @font-face {
   font-family:Noto Sans KR;
-  src:url('../assets/fonts/NotoSansKR-Regular-web.ttf?v=20261111-navy') format('truetype');
+  src:url('../assets/fonts/NotoSansKR-Regular-web.ttf?v=20261118-kbeauty') format('truetype');
   font-weight:100 500;
   font-display:swap
 }
 
 @font-face {
   font-family:Noto Sans KR;
-  src:url('../assets/fonts/NotoSansKR-Bold-web.ttf?v=20261111-navy') format('truetype');
+  src:url('../assets/fonts/NotoSansKR-Bold-web.ttf?v=20261118-kbeauty') format('truetype');
   font-weight:600 900;
   font-display:swap
 }
@@ -1465,4 +1465,10 @@ nav a[aria-current]:after {
 @media(max-width:760px) {
  .hero::before { background-position:65% center; }
  .hero::after { background:linear-gradient(180deg,rgba(15,29,53,.82),rgba(15,29,53,.67)); }
+}
+
+/* Four AI projects form two equal rows, matching the backend card scale. */
+.project-library .ai-project-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+@media(max-width:760px) {
+ .project-library .ai-project-grid { grid-template-columns:1fr; }
 }

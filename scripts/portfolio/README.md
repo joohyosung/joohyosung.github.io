@@ -1,6 +1,6 @@
 # Portfolio design and PDF sources
 
-The main page and six project decks share Noto Sans KR, navy `#142846`, blue `#315d9f`, pale blue `#c4d9f4`, paper `#fbfcfe`, and pale panels `#f0f4fa`.
+The main page and seven project decks share Noto Sans KR, navy `#142846`, blue `#315d9f`, pale blue `#c4d9f4`, paper `#fbfcfe`, and pale panels `#f0f4fa`.
 
 - Web styles and responsive type sizes: `css/style.css`.
 - Home page and inline category groups: `index.html` (`#works`).
@@ -44,6 +44,9 @@ Open `http://127.0.0.1:8765/`. This is a buildless static site; no framework or 
 For a future Java project, add its card inside `#backend` in `index.html`, update its category count, and update the toolkit's related link. Keep the same role / problem / approach / result structure and verify mobile layout before publication.
 
 
-The hero uses `assets/hero-navy.webp`, a compressed derivative of the existing `assets/bgimg.png`. Project thumbnails are ordinary links to the same PDF as the text links below each card. The main page presents only the six PDF-backed projects; the web-exercise gallery is no longer displayed.
+The hero uses `assets/hero-navy.webp`, a compressed derivative of the existing `assets/bgimg.png`. Project thumbnails are ordinary links to the same PDF as the text links below each card. The main page presents only the seven PDF-backed projects; the web-exercise gallery is no longer displayed.
 
 The safety-map deck includes the owner-supplied complete operating-structure diagram (`assets/safety-map-operating-structure.png`) as its own page, without cropping. It retains the separate database and deployment explanations.
+
+
+The K-Beauty export strategy deck (`kbeauty-export-strategy.pdf`) is defined in `build_kbeauty_pdf.py` and included by the shared builder. Its source is the owner-provided `AI_seminar_team4_personal` repository and [team presentation](https://docs.google.com/presentation/d/1F7b5ldjC89YLH8Li3YxasQXIow5-31MTGk95QmoZMSQ/edit). Public code: https://github.com/joohyosung/AI_seminar_team4 . The supplied presentation remains linked, without modification. Personal development CV (19.66%), common team comparison (25.19%), and follow-up holdout (27.13%) have different evaluation protocols and must not be conflated. Team models, strategy and hypothetical business results remain explicitly distinguished from personal contributions. No source/reference appendix is added.
